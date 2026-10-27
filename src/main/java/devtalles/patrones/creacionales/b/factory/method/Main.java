@@ -1,6 +1,9 @@
 package devtalles.patrones.creacionales.b.factory.method;
 
 import devtalles.patrones.creacionales.b.factory.method.ia.*;
+import devtalles.patrones.creacionales.b.factory.method.real.ExcelReportCreator;
+import devtalles.patrones.creacionales.b.factory.method.real.PdfReportCreator;
+import devtalles.patrones.creacionales.b.factory.method.real.ReporCreatortService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,5 +48,16 @@ public class Main {
 
         notificationServices.stream().forEach(NotificationService::enviarNotificacion);
         // ! las implementaciones propias para enviar un whats es en el producto concreto
+
+        List<ReporCreatortService> reportesList = List.of(
+                new ExcelReportCreator(),
+                new PdfReportCreator()
+        );
+
+        reportesList.stream().forEach(Main::createReport);
+    }
+
+    public static void createReport(ReporCreatortService reporter) {
+        reporter.ejecutarGeneracionReport();
     }
 }
