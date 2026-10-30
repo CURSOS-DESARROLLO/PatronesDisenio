@@ -1,10 +1,8 @@
 package devtalles.patrones.estructurales.c.composite.devtalles;
 
 import devtalles.patrones.estructurales.c.composite.ejercicio.MenuCategory;
-import devtalles.patrones.estructurales.c.composite.ejercicio.MenuComponent;
 import devtalles.patrones.estructurales.c.composite.ejercicio.MenuItem;
 import devtalles.patrones.util.Spacing;
-import jdk.jfr.Category;
 
 /**
  * ! Patrón Composite
