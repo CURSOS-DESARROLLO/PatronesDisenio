@@ -8,7 +8,7 @@ public class HelmetDecorator extends CharacterDecorator {
 
     @Override
     public String getDescription() {
-        return String.format("%s - con Casco", super.getDescription());
+        return String.format("%s \n con Casco", super.getDescription());
     }
 
     @Override

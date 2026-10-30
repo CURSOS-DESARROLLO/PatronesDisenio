@@ -8,7 +8,7 @@ public class SwordDecorator extends CharacterDecorator {
 
     @Override
     public String getDescription() {
-        return String.format("%s con Espada", super.getDescription());
+        return String.format("%s \n con Espada", super.getDescription());
     }
 
     @Override

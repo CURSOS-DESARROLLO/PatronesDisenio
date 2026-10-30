@@ -9,7 +9,7 @@ public class ShieldDecorator extends CharacterDecorator {
 
     @Override
     public String getDescription() {
-        return String.format("%s - con Escudo", super.getDescription());
+        return String.format("%s \n con Escudo", super.getDescription());
     }
 
     @Override

@@ -48,16 +48,16 @@ public class Main {
 
         //! ejercicio
         Character character = new BasicCharacter();
-        System.out.println(String.format("%s con los poderes: %s", character.getDescription(), character.getStats()));
+        System.out.println(String.format("%s \n con los poderes: %s", character.getDescription(), character.getStats()));
 
         character = new HelmetDecorator(character);
-        System.out.println(String.format("%s con los poderes: %s", character.getDescription(), character.getStats()));
+        System.out.println(String.format("%s \n con los poderes: %s", character.getDescription(), character.getStats()));
 
         character = new ShieldDecorator(character);
-        System.out.println(String.format("%s con los poderes: %s", character.getDescription(), character.getStats()));
+        System.out.println(String.format("%s \n con los poderes: %s", character.getDescription(), character.getStats()));
 
         character = new SwordDecorator(character);
-        System.out.println(String.format("%s con los poderes: %s", character.getDescription(), character.getStats()));
+        System.out.println(String.format("%s \n con los poderes: %s", character.getDescription(), character.getStats()));
 
     }
 }
